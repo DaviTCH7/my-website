@@ -1,0 +1,123 @@
+:root{
+  --dark-blue: #2C3E50;
+  --light-gold: #D4AF37;
+  --burned-red:	#8B0000;
+  --paper-white: #F5F5DC;
+}
+@font-face {
+  font-family: 'caps';
+  src: url('../Fonts/bpg_nino_elite_caps.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'normal';
+  src: url('../Fonts/bpg_nino_elite.otf') format('opentype');
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'normal';
+  margin: 0;
+  background-color: white;
+  color: var(--dark-blue);
+  scroll-behavior: smooth;
+  a{
+    text-decoration: none;
+  }
+}
+h1,strong,caption,header{
+  font-family: "caps";
+}
+.items, .logo, nav, .nav, .nav li {
+    display: flex;
+    align-items: center;
+}
+header{
+    position: fixed;
+    border-bottom: solid .5px black;
+    display: flex;
+    background-color: var(--paper-white);
+    height: 80px;
+    width: 100%;
+    .items{
+        height: 80px;
+        width: 80%;
+        justify-content: space-between;
+        margin: auto;
+        .logo{
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+            width: 156px;
+            height: 100%;
+        }
+        nav{
+            height: 100%;
+        }
+        .nav{
+            list-style: none;
+            gap: 10px;
+            height: 100%;
+            color: var(--dark-blue);
+            li{
+            height: 100%;
+            padding: 0px 5px;
+            transition: .3s;
+            font-weight: bolder;
+            cursor: pointer;
+            &:hover{
+                background-color: #dedec6;
+             }
+            }
+            a{
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bolder;
+                color: var(--dark-blue);
+                display: block;
+                padding: 25px;
+            }
+            .dropdown{
+                position: relative;
+                .hide{
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    background: #f0f0f0;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                }
+                &:hover > .hide {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+.hidden{
+  height: 80px;
+}
+
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: var(--dark-blue);
+    color: var(--paper-white);
+    text-align: center;
+    padding: 20px;
+    img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    }
+}

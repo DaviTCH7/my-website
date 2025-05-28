@@ -1,0 +1,93 @@
+strong{
+    font-family: "caps";
+}
+main{
+    h1{
+        text-align: center;
+    }
+    .item{
+        margin-bottom: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .text{
+            font-family: 'normal';
+            font-size: 20px;
+            background: var(--paper-white) url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+            color: #4b3621;
+            box-sizing: border-box;
+            padding: 40px;
+            border: 1px solid #c2b280;
+            border-radius: 15px;
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+            line-height: 1.8;
+            display: flex;
+            flex-direction: column;    
+            text-align: left;
+            width: 80%;
+                .pics{
+                font-weight: bolder;
+                display: flex;
+                justify-content: space-around;
+                figure {
+                    margin: 0;
+                    font-family: "caps";
+                    background: var(--paper-white);
+                    border: 2px solid #c2b280;
+                    border-radius: 15px;
+                    padding: 20px;
+                    width: 40%;
+                    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+                    text-align: center;
+                    figcaption {
+                    font-size: 20px;
+                    color: #5e4630;
+                    margin-top: 15px;
+                    background-color: rgba(255, 248, 220, 0.8);
+                    padding: 10px;
+                    border-top: 1px dashed #c2b280;
+                    }
+                    img {
+                    width: 80%;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+                    }
+                }
+            }
+            table {
+                border-collapse: collapse;
+                background: #fff8dc url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+                border: 2px solid #c2b280;
+                border-radius: 15px;
+                width: 100%;
+                height: auto;
+                th, td {
+                padding: 16px 20px;
+                border: 1px solid #c2b280;
+                text-align: left;
+                color: #4b3621;
+                }
+                th {
+                background-color: #e7d8b9;
+                font-size: 18px;
+                font-weight: bold;
+                border-bottom: 2px solid #a68c5c;
+                }
+                tr:nth-child(even) {
+                    background-color: #fef9e7;
+                    }
+                tr:hover {
+                background-color: #f5edd2;
+                }
+                caption {
+                    caption-side: top;
+                    font-size: 24px;
+                    margin-bottom: 15px;
+                    font-weight: bold;
+                    color: #5e4630;
+                }
+            }
+        }
+    }
+}
